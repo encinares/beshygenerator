@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700&display=swap');
+
+:root {
+  --light-color: rgb(250,250,250);
+  --semilight-color: rgb(209, 209, 209);
+  --dark-color: #1d1d1d;
+  --darkgray-color: #353535;
+  --border-color:rgba(236, 236, 236, 0.5);
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--light-color);
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--dark-color) ;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 12rem;
+  font-weight: 200;
+}
+
+span, .h1-span {
+  font-weight: bold;
+}
+
+.title-p {
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.generatedText, .title-p {
+  font-weight: 300;
+}
+
+.container {
+  max-width: 75rem;
+  margin: 98px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#typewrite {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-family: monospace;
+}
+
+.p-dev {
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    typing 2s steps(20), blinker .4s step-end infinite alternate;
+}
+@keyframes blinker {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from { width: 0 } 
+}
+
+#justme {
+  font-weight: 200;
+}
+
+.p-dev, .textToGenerate {
+  letter-spacing: 2px;
+}
+
+.generatedText {
+  background-color:var(--dark-color) ;
+  margin-top: 25px;
+  font-size: 18px;
+  width: 90%;
+}
+
+.textToGenerate{
+  position: relative;
+  margin: 3rem 2rem 5rem;
+  width: 98%;
+  height: 7.8rem;
+  background-color: var(--dark-color) ;
+  border-color: var(--border-color);
+  border-style: solid;
+  border-radius: .5rem;
+  box-shadow:4px 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.col {
+  margin-bottom: 22px;
+}
+
+.p-generateText {
+  color: var(--semilight-color);
+  font-size: 1.5rem;
+}
+
+.col .generatedText {
+  padding-top: 6px;
+  font-size: 2rem;
+  width: 80%;
+}
+
+ .col-copy-btn, .row-gen-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button, .copy-btn, .textToGenerate {
+  text-align: center;
+  box-shadow:4px 6px 6px 0 var(--shadow);
+}
+
+.row-gen-btn {
+  flex-direction: column;
+  margin: 3.5rem auto 3.5rem;;
+  align-items: center; 
+}
+
+.button, .copy-button, .change-emoji-button {
+  box-shadow:4px 6px 6px 0 var(--shadow);
+}
+
+.button {
+  width: 186px;
+  height: 56px;
+  font-size: 2.2rem;
+  color:  #353535;
+  border: black solid 1px;
+  border-radius: 25px;
+  margin-bottom: 1.4rem ;
+}
+
+.col > .copy-button:hover, .change-emoji-button:hover, .button:hover {
+  background-color: #83838370;
+  color: rgb(255, 255, 255);
+}
+
+.col > .copy-button:active, .change-emoji-button:active, .button:active {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.copy-button {
+  margin: 8px 10px ;
+}
+
+.col > .copy-button, .change-emoji-button {
+  background-color: #1d1d1d;
+  font-size: 12px;
+  padding: 6px 12px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  border-color: var(--border-color)
+}
+.emoji {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  body { width: 95%; }
+  h1 { font-size: 5.5rem; }  
+  .title-p { font-size: 12px; }
+  .emoji { font-size: 2.5rem; }
+  .textToGenerate {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .col {
+    width: 70%;
+    position: relative;
+  }
+}
+

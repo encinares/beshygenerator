@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>beshygenerator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container"> 
+    <h1>Beshy<span class="h1-span">GEN.</span></h1>
+    <p class="title-p">Your <span class="emoji" id="emoji">🤸</span> "Bat malungkot ang beshy ko?" Generator</p>
+    <input type="text" class="textToGenerate" id="generateTextInput" placeholder="Type your text here">
+    <div class="col">
+       <button class="copy-button" id="copyButton" onclick="copyButton()" onkeypress="copyButton()">Copy</button>
+       <button class="change-emoji-button" id="changeEmoji">Change Emoji</button>
+    </div>
+    <p id="generateText" class="p-generateText"></p>
+    <p><span class="p-emoji"></span></p>
+    <div class="row-gen-btn">
+      <input type="button" value="Generate" class="button" id="generateButton" onclick="generateButton()">
+      <div id="typewrite">
+        <p class="p-dev">dev : <span id="justme">encinares16</span></p>
+      </div>
+    </div>
+  </div> 
+
+  <script src="index.js"></script>
+</body>
+</html>
